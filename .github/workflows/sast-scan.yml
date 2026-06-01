@@ -7,7 +7,6 @@ on:
 jobs:
   sast:
     runs-on: ubuntu-latest
-
     env:
       NVD_API_KEY: ${{ secrets.WORKSHOP6_NVD_API_KEY }}
 

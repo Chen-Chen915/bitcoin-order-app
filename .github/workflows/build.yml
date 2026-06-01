@@ -2,8 +2,7 @@ name: Bitcoin order App
 
 on:
   push:
-    branches:
-      - githubcicd
+    branches: [githubcicd]
 
 jobs:
   ci:
@@ -43,9 +42,6 @@ jobs:
 
       - name: Update types to latest
         run: npm install --save-dev @types/node@latest --force
-
-      # - name: Test
-      #   run: npm run test --watch=false --browsers=ChromeHeadless
 
       - name: Conventional Changelog Action
         id: changelog
